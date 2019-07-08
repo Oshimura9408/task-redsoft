@@ -1,28 +1,62 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <What />
+    <Func />
+    <PersonalJ />
+    <Specialists />
+    <Subscribe />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from "./components/Home";
+import Header from "./components/Header";
+import What from "./components/What";
+import Func from "./components/Func";
+import PersonalJ from "./components/Personal-journal";
+import Specialists from "./components/Specialists";
+import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Home,
+    Header,
+    What,
+    Func,
+    PersonalJ,
+    Specialists,
+    Subscribe,
+    Footer
   }
-}
+};
 </script>
 
 <style>
+@font-face {
+  font-family: "Cera Round Pro";
+  src: local("CeraRoundPro-Regular"),
+    url("./fonts/CeraRoundPro-Regular.woff2") format("woff2"),
+    url("./fonts/CeraRoundPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Cera Round Pro";
 }
 </style>
